@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block css %}
+    {{ block.super }}
+    <style>
+        main {
+            margin-top: 20px;
+        }
+
+        .jumbotron {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .jumbotron h1 {
+            font-size: 2.5rem;
+        }
+
+        .jumbotron p {
+            font-size: 1.2rem;
+        }
+
+        /* Additional styling for the elections section */
+        .election {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .election:hover {
+            transform: scale(1.05);
+        }
+
+        .election-title {
+            color: #3498db;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .election-details {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+    </style>
+{% endblock css %}
+
+{% block content %}
+    <!-- Jumbotron for Welcome Message -->
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to the Electronic Voting System Using BlockChain</h1>
+        <p class="lead">Vote for Your Candidate</p>
+    </div>
+
+{% endblock %}
